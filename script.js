@@ -5,7 +5,7 @@ const caixaResultado = document.querySelector('.caixa-resultado');
 
 const perguntas = [
     {
-        enunciado: "Você gosta da IA?",
+        enunciado: "Você ja ouviu falar sobre a Inteligencia Artificial (IA)?",
         alternativas:["Sim","Não"]
     },
     {
@@ -30,5 +30,6 @@ function mostraAlternativas(){
     for(const alternativas of perguntaAtual.alternativas){
         const botaoAlternativas = document.createElement("button");
         botaoAlternativas.textContent = alternativa;
+        caixaAlternativa.appendChild(botaoAlternativas);
     }
 }
